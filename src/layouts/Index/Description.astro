@@ -1,0 +1,110 @@
+---
+const { Data = [] } = Astro.props; //receives an array of string data with the information to be shown
+---
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="container px-6 py-10 mx-auto">
+    <h1
+      class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white"
+    >
+      SMILEK
+    </h1>
+
+    <!-- this component is in charge of mapping by going through the array and displaying the information, 
+      this information must be loaded from the index.astro file located in the Page folder,
+       it also makes a validation of a character just to change the shape of the component.-->
+    {
+      Data &&
+        Data.map((des, index) => {
+          if (des.number === "1") {
+            return (
+              <div class=" first mt-8 lg:-mx-6 lg:flex lg:items-center bg-gray-950">
+                <img
+                  class="object-cover w-full lg:mx-6 lg:w-4/12 rounded-xl h-72 lg:h-auto"
+                  src={des.img}
+                  alt=""
+                />
+
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6">
+                  <a
+                    href="#"
+                    class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl"
+                  >
+                    {des.title}
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    {des.description}
+                  </p>
+
+                  <div class="flex items-center mt-6">
+                    <img
+                      class="object-cover object-center w-10 h-10 rounded-full my-3 mx-3"
+                      src="img/smilekprofile.png"
+                      alt=""
+                    />
+
+                    <div class="mx-4">
+                      <h1 class="text-sm text-gray-700 dark:text-gray-200">
+                        Smilek
+                      </h1>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">
+                        Developer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          } else {
+            return (
+              <div class="first mt-8 lg:-mx-6 lg:flex lg:items-center bg-gray-800">
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-14">
+                  <a
+                    href="#"
+                    class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl"
+                  >
+                    {des.title}
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm ">
+                    {des.description}
+                  </p>
+
+                  <div class="flex items-center mt-6">
+                    <img
+                      class="object-cover object-center w-10 h-10 rounded-full my-3 mx-3"
+                      src="img/smilekprofile.png"
+                      alt=""
+                    />
+
+                    <div class="mx-4">
+                      <h1 class="text-sm text-gray-700 dark:text-gray-200">
+                        Smilek
+                      </h1>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">
+                        Developer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="object-cover w-full lg:mx-6 lg:w-4/12 rounded-xl h-72 lg:h-auto"
+                  src={des.img}
+                  alt=""
+                />
+              </div>
+            );
+          }
+        })
+    }
+  </div>
+</section>
+
+<style>
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>

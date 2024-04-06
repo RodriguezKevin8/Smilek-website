@@ -1,0 +1,180 @@
+<section class="first text-gray-600 body-font" id="token">
+  <!-- This component is responsible for displaying the main information of the currency. 
+    It contains JavaScript code to load a button on small pages for easier copying of the wallet address. -->
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+        Master Cleanse Reliac Heirloom
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-500">
+        Smilek is an innovative project aimed at revolutionizing the way we
+        interact with digital currency and financial services. At its core,
+        Smilek aims to simplify and enhance the user experience in the world of
+        cryptocurrencies by offering innovative solutions and unparalleled
+        accessibility.
+      </p>
+    </div>
+    <div class="flex flex-wrap text-center justify-center">
+      <div class="p-4 md:w-8/12 sm:w-1/2 w-full">
+        <div
+          class="flex items-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400 dark:border-blue-800 hidden"
+          role="alert"
+          id="alert"
+        >
+          <svg
+            class="flex-shrink-0 inline w-4 h-4 me-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+            ></path>
+          </svg>
+          <span class="sr-only">Info</span>
+          <div>
+            <span class="font-medium">Info alert!</span> Text copied to the device.
+          </div>
+        </div>
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-wallpapertext-indigo-500 w-12 h-12 mb-3 inline-block"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M8 6h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-12"></path>
+            <path d="M6 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+            <path d="M8 18v-12a2 2 0 1 0 -4 0v12"></path>
+          </svg>
+          <h2
+            id="contract"
+            class="title-font font-medium text-xs sm:text-xl text-gray-500 whitespace-normal"
+          >
+            7x4FgiFfeqzs1tiUNvJzpt47GtLXAJ8Jfn8G1Hyyu6JH
+          </h2>
+          <p class="leading-relaxed overflow-hidden">Contract Address</p>
+          <div class="md:hidden">
+            <button
+              id="copyButton"
+              class="bg-white text-black hover:bg-yellow-500 hover:text-black py-2 px-6 rounded-full text-sm font-bold my-6"
+              type="button"
+            >
+              Copy Contract
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap m-4 text-center">
+      <div class="p-4 md:w-4/12 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-receipt-2 w-12 h-12 mb-3 inline-block"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"
+            ></path><path
+              d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5"
+            ></path></svg
+          >
+          <h2 class="title-font font-medium text-3xl text-gray-500">0%</h2>
+          <p class="leading-relaxed">Total Tax</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-flame w-12 h-12 mb-3 inline-block"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"
+            ></path></svg
+          >
+          <h2 class="title-font font-medium text-3xl text-gray-500">
+            100% Burnt Liquidity
+          </h2>
+          <p class="leading-relaxed">LP BURNT</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-help-hexagon w-12 h-12 mb-3 inline-block"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"
+            ></path><path d="M12 16v.01"></path><path
+              d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"
+            ></path></svg
+          >
+          <h2
+            class="title-font font-medium text-sm sm:text-xl text-gray-500 whitespace-normal"
+          >
+            2.008.997.929.907
+          </h2>
+          <p class="leading-relaxed">Total Supply</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById("copyButton").addEventListener("click", function () {
+    var contractText = document.getElementById("contract").innerText;
+    navigator.clipboard
+      .writeText(contractText)
+      .then(function () {
+        var alertBox = document.getElementById("alert");
+        alertBox.classList.remove("hidden");
+        setTimeout(function () {
+          alertBox.classList.add("hidden");
+        }, 3000);
+      })
+      .catch(function (err) {
+        console.error("Error: ", err);
+      });
+  });
+</script>
+<style>
+  .overflow-hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+  }
+</style>
