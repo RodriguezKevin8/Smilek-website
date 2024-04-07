@@ -2,11 +2,9 @@
 const { Data = [] } = Astro.props; //receives an array of string data with the information to be shown
 ---
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-gray-900">
   <div class="container px-6 py-10 mx-auto">
-    <h1
-      class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white"
-    >
+    <h1 class="text-3xl font-semibold capitalize lg:text-4xl text-white">
       SMILEK
     </h1>
 
@@ -26,12 +24,9 @@ const { Data = [] } = Astro.props; //receives an array of string data with the i
                 />
 
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6">
-                  <a
-                    href="#"
-                    class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl"
-                  >
+                  <p class="block mt-4 text-2xl font-semibold  text-white md:text-3xl">
                     {des.title}
-                  </a>
+                  </p>
 
                   <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
                     {des.description}
@@ -40,14 +35,12 @@ const { Data = [] } = Astro.props; //receives an array of string data with the i
                   <div class="flex items-center mt-6">
                     <img
                       class="object-cover object-center w-10 h-10 rounded-full my-3 mx-3"
-                      src="img/smilekprofile.png"
+                      src="../../img/smilekprofile.webp"
                       alt=""
                     />
 
                     <div class="mx-4">
-                      <h1 class="text-sm text-gray-700 dark:text-gray-200">
-                        Smilek
-                      </h1>
+                      <h1 class="text-sm text-gray-200">Smilek</h1>
                       <p class="text-sm text-gray-500 dark:text-gray-400">
                         Developer
                       </p>
@@ -60,12 +53,9 @@ const { Data = [] } = Astro.props; //receives an array of string data with the i
             return (
               <div class="first mt-8 lg:-mx-6 lg:flex lg:items-center bg-gray-800">
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-14">
-                  <a
-                    href="#"
-                    class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl"
-                  >
+                  <p class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
                     {des.title}
-                  </a>
+                  </p>
 
                   <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm ">
                     {des.description}
@@ -74,7 +64,7 @@ const { Data = [] } = Astro.props; //receives an array of string data with the i
                   <div class="flex items-center mt-6">
                     <img
                       class="object-cover object-center w-10 h-10 rounded-full my-3 mx-3"
-                      src="img/smilekprofile.png"
+                      src="../../img/smilekprofile.webp"
                       alt=""
                     />
 
